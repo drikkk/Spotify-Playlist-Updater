@@ -1,5 +1,4 @@
 # Project specific
-resources/images/*
 output.log
 
 # Byte-compiled / optimized / DLL files

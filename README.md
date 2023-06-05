@@ -4,19 +4,22 @@ I created this project to fight the Spotify playlist reporting bots.
 Salty creators use bots to spam reports on growing playlists which triggers the Spotify Takedown Notification and your
 playlist will be nulled from its title, description and image.
 
+When executed all playlists in the json file will be checked upon.. If a name change is detected, then the playlist's name, description and image is updated as per the json file.
+Description and image update can be skipped by setting them as empty "" value.
+
 ## Prerequisites
 
-- [Python 3.8](https://www.python.org/downloads/) (or greater)
+- Install [Python 3.8](https://www.python.org/downloads/) (or greater)
 
 ## Set up Python project
 
 - Clone the repository
 - Add your Spotify API credentials to config.ini
-- Run ```pip install -r requirements.txt```
+- Execute ```pip install -r requirements.txt``` in project root
 
 ## Define your playlists
 
-- Get your playlist ID: ```https://open.spotify.com/playlist/YOUR_PLAYLIST_ID?si=83ebb0218ab843cd```
+- Get your playlist ID from your Spotify playlist URL: ```https://open.spotify.com/playlist/YOUR_PLAYLIST_ID?si=83ebb0218ab843cd```
 - Move all your playlist images to: ```path/Spotify-Playlist-Doctor/resources/images```
 - Edit playlists json file: ```path/Spotify-Playlist-Doctor/playlists.json```
 - Configure your playlist name, description, image name and Spotify ID:

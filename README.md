@@ -7,6 +7,8 @@ playlist will be nulled from its title, description and image.
 When executed, all playlists in the json file will be checked upon. If a name change is detected, then the playlist's name, description and image is updated as per the json file.
 Description and image update can be skipped by setting them as empty ```""``` value.
 
+Results of the run are logged to output.log in project root.
+
 ## Prerequisites
 
 - Install [Python 3.8](https://www.python.org/downloads/) (or greater)

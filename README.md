@@ -25,7 +25,7 @@ Results of the run are logged to output.log in project root.
 - Get your playlist ID from your Spotify playlist URL: ```https://open.spotify.com/playlist/YOUR_PLAYLIST_ID?si=83ebb0218ab843cd```
 - Move all your playlist images to: ```path/Spotify-Playlist-Doctor/resources/images```
 - Edit playlists json file: ```path/Spotify-Playlist-Doctor/playlists.json```
-- Configure your playlist name, description, image name and Spotify ID:
+- Add your playlist name, description, image name and Spotify ID:
 ```
 {
     "name": "Example playlist",

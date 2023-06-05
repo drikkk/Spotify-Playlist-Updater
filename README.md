@@ -15,7 +15,7 @@ Description and image update can be skipped by setting them as empty ```""``` va
 
 - Clone the repository
 - Add your Spotify API credentials to config.ini
-- Execute ```pip install -r requirements.txt``` in ```path/Spotify-Playlist-Doctor```
+- Execute ```pip install -r requirements.txt``` in project root
 
 ## Define your playlists
 

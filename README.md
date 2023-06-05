@@ -10,6 +10,7 @@ Description and image update can be skipped by setting them as empty ```""``` va
 ## Prerequisites
 
 - Install [Python 3.8](https://www.python.org/downloads/) (or greater)
+- Get your [Spotify API Credentials](https://developer.spotify.com/documentation/web-api/tutorials/client-credentials-flow)
 
 ## Set up Python project
 

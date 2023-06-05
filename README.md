@@ -1,7 +1,7 @@
 # Spotify Playlist Doctor
 
 I created this project to fight the Spotify playlist reporting bots.
-Salty creators use bots to spam reports on growing playlists which triggers the Spotify Takedown Notification and your
+Creators use bots to spam reports on growing playlists which triggers the Spotify Takedown Notification and your
 playlist will be nulled from its title, description and image.
 
 When executed, all playlists in the json file will be checked upon. If a name change is detected, then the playlist's name, description and image is updated as per the json file.

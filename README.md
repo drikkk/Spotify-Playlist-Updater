@@ -11,14 +11,15 @@ Results of the run are logged to output.log in project root.
 
 ## Prerequisites
 
-- Install [Python 3.8](https://www.python.org/downloads/) (or greater)
-- Get your [Spotify API Credentials](https://developer.spotify.com/documentation/web-api/tutorials/client-credentials-flow)
+- [Python 3.8](https://www.python.org/downloads/) (or greater)
+- [Spotify Client ID and Client Secret](https://developer.spotify.com/documentation/web-api/concepts/apps)
+- [Spotify API Refresher Token](https://developer.spotify.com/documentation/ios/concepts/token-swap-and-refresh)
 
 ## Set up Python project
 
-- Navigate to project root
+- Navigate to project root directory
 - Execute ```pip install -r requirements.txt```
-- Edit ```config.ini``` and add your Spotify API Credentials
+- Edit ```config.ini``` and fill in your Spotify API Credentials from [Prerequisites](#prerequisites)
 
 ## Define your playlists
 
@@ -26,7 +27,7 @@ Results of the run are logged to output.log in project root.
 - Move all your playlist images to: ```C:/Spotify-Playlist-Doctor/resources/images```
 - Edit playlists json file: ```C:/Spotify-Playlist-Doctor/playlists.json```
 - Add your playlist name, description, image name and Spotify ID:
-```
+```json
 {
     "name": "Example playlist",
     "description": "Example description",
@@ -45,12 +46,10 @@ Results of the run are logged to output.log in project root.
 
 Open Task Scheduler and create a new task to run a program with admin permissions, schedule it to 5 minutes interval
 after first run.
-
 ```
 Program to start: C:\Windows\System32\wscript.exe
 Argument: C:\Spotify-Playlist-Doctor\resources\scripts\run.vbs
 Start in: C:\Spotify-Playlist-Doctor\resources\scripts\
 ```
-
 If you have followed all the steps without errors then your playlists will now be checked in the background every 5
 minutes and will be updated once playlist name change is detected!

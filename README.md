@@ -23,8 +23,8 @@ Results of the run are logged to output.log in project root.
 ## Define your playlists
 
 - Get your playlist ID from your Spotify playlist URL: ```https://open.spotify.com/playlist/YOUR_PLAYLIST_ID?si=83ebb0218ab843cd```
-- Move all your playlist images to: ```path/Spotify-Playlist-Doctor/resources/images```
-- Edit playlists json file: ```path/Spotify-Playlist-Doctor/playlists.json```
+- Move all your playlist images to: ```C:/Spotify-Playlist-Doctor/resources/images```
+- Edit playlists json file: ```C:/Spotify-Playlist-Doctor/playlists.json```
 - Add your playlist name, description, image name and Spotify ID:
 ```
 {
@@ -48,8 +48,8 @@ after first run.
 
 ```
 Program to start: C:\Windows\System32\wscript.exe
-Argument: path\Spotify-Playlist-Doctor\resources\scripts\run.vbs
-Start in: path\Spotify-Playlist-Doctor\resources\scripts\
+Argument: C:\Spotify-Playlist-Doctor\resources\scripts\run.vbs
+Start in: C:\Spotify-Playlist-Doctor\resources\scripts\
 ```
 
 If you have followed all the steps without errors then your playlists will now be checked in the background every 5

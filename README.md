@@ -49,7 +49,7 @@ after first run.
 ```
 Program to start: C:\Windows\System32\wscript.exe
 Argument: path\Spotify-Playlist-Doctor\resources\scripts\run.vbs
-Start in: path\Spotify-Playlist-Doctor
+Start in: path\Spotify-Playlist-Doctor\resources\scripts\
 ```
 
 If you have followed all the steps without errors then your playlists will now be checked in the background every 5

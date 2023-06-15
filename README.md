@@ -11,7 +11,7 @@ Results of the run are logged to output.log in project root.
 
 ## Prerequisites
 
-- [Python 3.8](https://www.python.org/downloads/) (or greater)
+- [Python 3.8 with Pip](https://www.python.org/downloads/) (or greater)
 - [Spotify Client ID and Client Secret](https://developer.spotify.com/documentation/web-api/concepts/apps)
 - [Spotify API Refresher Token](https://developer.spotify.com/documentation/ios/concepts/token-swap-and-refresh)
 

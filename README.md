@@ -11,7 +11,8 @@ Results of the run are logged to output.log in project root.
 
 ## Prerequisites
 
-- [Python 3.8 with Pip](https://www.python.org/downloads/) (or greater)
+- [Python 3.8](https://www.python.org/downloads/) (or greater)
+- [Pip](https://pip.pypa.io/en/stable/installation/)
 - [Spotify Client ID and Client Secret](https://developer.spotify.com/documentation/web-api/concepts/apps)
 - [Spotify API Refresher Token](https://developer.spotify.com/documentation/ios/concepts/token-swap-and-refresh)
 
@@ -53,5 +54,3 @@ Program to start: C:\Windows\System32\wscript.exe
 Argument: C:\Spotify-Playlist-Doctor\resources\scripts\run.vbs
 Start in: C:\Spotify-Playlist-Doctor\resources\scripts\
 ```
-If you have followed all the steps without errors then your playlists will now be checked in the background every 5
-minutes and will be updated once playlist name change is detected!

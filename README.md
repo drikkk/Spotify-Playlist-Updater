@@ -28,18 +28,20 @@ Results of the run are logged to output.log in project root.
 - Edit playlists json file: ```C:/Spotify-Playlist-Doctor/playlists.json```
 - Add your playlist name, description, image name and Spotify ID:
 ```json
-{
-    "name": "Example playlist",
-    "description": "Example description",
-    "image": "example_image.jpg",
-    "spotifyPlaylistId": "EXAMPLE_ID"
-},
-{
-    "name": "Playlist without description and image",
-    "description": "",
-    "image": "",
-    "spotifyPlaylistId": "6IOBfN7LWZJ8IGfX7i07R1"
-}
+[
+    {
+        "name": "Example playlist",
+        "description": "Example description",
+        "image": "example_image.jpg",
+        "spotifyPlaylistId": "EXAMPLE_ID"
+    },
+    {
+        "name": "Playlist without description and image",
+        "description": "",
+        "image": "",
+        "spotifyPlaylistId": "6IOBfN7LWZJ8IGfX7i07R1"
+    }
+]
 ```
 
 ## Running every 5 minutes in the background on your Windows machine

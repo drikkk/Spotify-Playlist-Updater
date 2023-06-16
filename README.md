@@ -54,3 +54,7 @@ Program to start: C:\Windows\System32\wscript.exe
 Argument: C:\Spotify-Playlist-Doctor\resources\scripts\run.vbs
 Start in: C:\Spotify-Playlist-Doctor\resources\scripts\
 ```
+
+## TO DO
+
+Move from "refresher_token" to "code": https://github.com/drikkk/Spotify-Playlist-Doctor/issues/2

@@ -7,7 +7,7 @@ playlist will be nulled from its title, description and image.
 When executed, all playlists in the json file will be checked upon. If a name change is detected for the given playlist, then its name, description and image is updated.
 Description and image update can be skipped by setting them as empty ```""``` value in the json file.
 
-Results of the run are logged to output.log in project root.
+Playlist checkup, update and possible exceptions are logged to ```output.log``` in project root.
 
 ## Prerequisites
 

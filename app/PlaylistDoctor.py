@@ -43,8 +43,9 @@ class PlaylistDoctor:
 
         for playlist in playlists:
             if api_adapter.get_playlist_name(playlist) == playlist.name:
-                log.info(f"{playlist.name}: Name change not detected, skipping update.")
+                log.info(f"{playlist.name}: Playlist seems healthy!")
             else:
+                log.info(f"{playlist.name}: Playlist is sick, administering medicine!")
                 api_adapter.update_name(playlist)
                 if playlist.image:
                     api_adapter.update_image(playlist)

@@ -45,16 +45,6 @@ When Main.py is run, then playlist checkup, update and error messages are logged
 ]
 ```
 
-## Running every 5 minutes in the background on your Windows machine
-
-Open Task Scheduler and create a new task to run a program with admin permissions, schedule it to 5 minutes interval
-after first run.
-```
-Program to start: C:\Windows\System32\wscript.exe
-Argument: C:\Spotify-Playlist-Doctor\resources\scripts\run.vbs
-Start in: C:\Spotify-Playlist-Doctor\resources\scripts\
-```
-
-## TO DO
+## To Do
 
 Move from "refresher_token" to "code": https://github.com/drikkk/Spotify-Playlist-Doctor/issues/2

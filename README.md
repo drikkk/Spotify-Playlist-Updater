@@ -16,18 +16,24 @@ When Main.py is run, then playlist checkup, update and error messages are logged
 - [Spotify Client ID and Client Secret](https://developer.spotify.com/documentation/web-api/concepts/apps)
 - [Spotify API Refresher Token](https://developer.spotify.com/documentation/ios/concepts/token-swap-and-refresh)
 
-## Set up Python project
+## Set up and run project
 
-- Navigate to project root directory
-- Execute ```pip install -r requirements.txt```
-- Edit ```config.ini``` and fill in your Spotify API Credentials from [Prerequisites](#prerequisites)
+1. Navigate to project root directory
+2. Edit ```config.ini``` and fill in your Spotify API Credentials from [Prerequisites](#prerequisites)
+3. [Define your playlists](#define-your-playlists)
+4. Run command ```pip install -r requirements.txt```
+5. Run command ```python3.8 Main.py```
+
+If you have followed these steps without errors then your playlist should have been updated and result logged to ```output.log```
 
 ## Define your playlists
 
-- Get your playlist ID from your Spotify playlist URL: ```https://open.spotify.com/playlist/YOUR_PLAYLIST_ID?si=83ebb0218ab843cd```
-- Move all your playlist images to: ```C:/Spotify-Playlist-Doctor/resources/images```
-- Edit playlists json file: ```C:/Spotify-Playlist-Doctor/playlists.json```
-- Add your playlist name, description, image name and Spotify ID:
+1. Get your playlist ID from your Spotify playlist URL: ```https://open.spotify.com/playlist/YOUR_PLAYLIST_ID?si=83ebb0218ab843cd```
+2. Move all your playlist images to: ```C:/Spotify-Playlist-Doctor/resources/images```
+3. Edit playlists json file: ```C:/Spotify-Playlist-Doctor/playlists.json```
+4. Add your playlist name, description, image name and Spotify ID
+
+Example:
 ```json
 [
     {

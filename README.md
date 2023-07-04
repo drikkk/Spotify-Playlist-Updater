@@ -28,10 +28,12 @@ If you have followed these steps without errors then your playlist should have b
 
 ## Define your playlists
 
-1. Get your playlist ID from your Spotify playlist URL: ```https://open.spotify.com/playlist/```__YOUR_PLAYLIST_ID__```?si=83ebb0218ab843cd```
+1. Get your Public playlist ID: ```https://open.spotify.com/playlist/```__YOUR_PLAYLIST_ID__```?si=83ebb0218ab843cd```
 2. Move all your playlist images to: ```/resources/images```
 3. Open playlists json file: ```playlists.json```
-4. Add your public playlists that you wish to check upon. Example:
+4. Add your playlists that you wish to keep healthy. 
+
+### Example:
 
 ```json
 [

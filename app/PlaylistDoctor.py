@@ -10,7 +10,7 @@ log = CustomLogger(__name__)
 
 class PlaylistDoctor:
     @staticmethod
-    def get_all_playlists():
+    def get_all_patients():
         PLAYLISTS_FILE = "playlists.json"
         current_dir = os.path.dirname(os.path.abspath(__file__))
         playlists_file_path = os.path.join(current_dir, "..", PLAYLISTS_FILE)
@@ -38,7 +38,7 @@ class PlaylistDoctor:
             raise FileNotFoundError()
 
     @staticmethod
-    def examine_and_update_playlist_details(playlists):
+    def diagnose_and_cure_patients(playlists):
         api_adapter = ApiAdapter()
 
         for playlist in playlists:

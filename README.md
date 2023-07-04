@@ -28,22 +28,21 @@ If you have followed these steps without errors then your playlist should have b
 
 ## Define your playlists
 
-1. Get your playlist ID from your Spotify playlist URL: ```https://open.spotify.com/playlist/YOUR_PLAYLIST_ID?si=83ebb0218ab843cd```
-2. Move all your playlist images to: ```C:/Spotify-Playlist-Doctor/resources/images```
-3. Edit playlists json file: ```C:/Spotify-Playlist-Doctor/playlists.json```
-4. Add your playlist name, description, image name and Spotify ID
+1. Get your playlist ID from your Spotify playlist URL: ```https://open.spotify.com/playlist/```__YOUR_PLAYLIST_ID__```?si=83ebb0218ab843cd```
+2. Move all your playlist images to: ```/resources/images```
+3. Open playlists json file: ```playlists.json```
+4. Add your public playlists that you wish to check upon. Example:
 
-Example:
 ```json
 [
     {
-        "name": "Example playlist",
+        "name": "Example playlist #1",
         "description": "Example description",
         "image": "example_image.jpg",
-        "spotifyPlaylistId": "EXAMPLE_ID"
+        "spotifyPlaylistId": "4EAgTGzJpLvtDxQhqNgd0z"
     },
     {
-        "name": "Playlist without description and image",
+        "name": "Example playlist #2, without description and image",
         "description": "",
         "image": "",
         "spotifyPlaylistId": "6IOBfN7LWZJ8IGfX7i07R1"
@@ -53,4 +52,4 @@ Example:
 
 ## To Do
 
-Move from "refresher_token" to "code": https://github.com/drikkk/Spotify-Playlist-Doctor/issues/2
+1. Move from "refresher_token" to "code": https://github.com/drikkk/Spotify-Playlist-Doctor/issues/2

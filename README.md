@@ -21,8 +21,8 @@ When Main.py is run, then playlist checkup, update and error messages are logged
 1. Navigate to project root directory
 2. Edit ```config.ini``` and fill in your Spotify API Credentials from [Prerequisites](#prerequisites)
 3. [Define your playlists](#define-your-playlists)
-4. Run command ```pip install -r requirements.txt```
-5. Run command ```python3.8 Main.py```
+4. Run command ```pip3 install -r requirements.txt```
+5. Run command ```python3 Main.py```
 
 If you have followed these steps without errors then your playlist should have been updated and result logged to ```output.log```
 

@@ -7,7 +7,7 @@ from app.ApiAdapter import ApiAdapter
 
 log = LoggingHandler(__name__)
 
-class PlaylistUpdaterService:
+class PlaylistService:
 
     @staticmethod
     def get_all_playlists():
@@ -26,29 +26,29 @@ class PlaylistUpdaterService:
                     playlist_id = playlist.id
 
                     if not playlist_name:
-                        log.error(f"{playlist_id}: Playlist name value cannot be empty.")
+                        log.error(f"{playlist_id}: Playlist name value cannot be empty...")
                         raise ValueError
 
                     if not playlist_id:
-                        log.error(f"{playlist_name}: Playlist Spotify ID value cannot be empty.")
+                        log.error(f"{playlist_name}: Playlist Spotify ID value cannot be empty...")
                         raise ValueError
 
                 return playlists_array
         except FileNotFoundError:
-            log.error(f"Could not find {MY_PLAYLISTS_FILE_NAME} from the root directory.")
+            log.error(f"Could not find {MY_PLAYLISTS_FILE_NAME} from the root directory...")
             raise FileNotFoundError()
 
     @staticmethod
     def update_playlists_if_outdated(playlists):
-        api_adapter = ApiAdapter()
+        api = ApiAdapter()
 
         for playlist in playlists:
-            if api_adapter.get_playlist_name(playlist) == playlist.name:
-                log.info(f"{playlist.name}: Playlist seems healthy!")
-            else:
-                log.info(f"{playlist.name}: Playlist is sick, administering medicine!")
-                api_adapter.update_name(playlist)
+
+            if api.get_playlist_name(playlist) != playlist.name:
+                
+                log.info(f"{playlist.name}: Updating playlist...")
+                api.update_name(playlist)
                 if playlist.image:
-                    api_adapter.update_image(playlist)
+                    api.update_image(playlist)
                 if playlist.description:
-                    api_adapter.update_description(playlist)
+                    api.update_description(playlist)

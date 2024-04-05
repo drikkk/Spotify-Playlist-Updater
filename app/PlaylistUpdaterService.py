@@ -2,25 +2,26 @@ import json
 import os
 
 from app.Playlist import Playlist
-from app.CustomLogger import CustomLogger
+from app.LoggingHandler import LoggingHandler
 from app.ApiAdapter import ApiAdapter
 
-log = CustomLogger(__name__)
+log = LoggingHandler(__name__)
 
+class PlaylistUpdaterService:
 
-class PlaylistDoctor:
     @staticmethod
-    def get_all_patients():
-        PLAYLISTS_FILE = "playlists.json"
+    def get_all_playlists():
+        MY_PLAYLISTS_FILE_NAME = "my_playlists.json"
+
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        playlists_file_path = os.path.join(current_dir, "..", PLAYLISTS_FILE)
+        my_playlists_file = os.path.join(current_dir, "..", MY_PLAYLISTS_FILE_NAME)
 
         try:
-            with open(playlists_file_path) as playlists_file:
-                playlist_data = json.load(playlists_file)
-                playlists = [Playlist(**playlist) for playlist in playlist_data]
+            with open(my_playlists_file) as playlists_file:
+                my_playlists_json = json.load(playlists_file)
+                playlists_array = [Playlist(**playlist) for playlist in my_playlists_json]
 
-                for playlist in playlists:
+                for playlist in playlists_array:
                     playlist_name = playlist.name
                     playlist_id = playlist.id
 
@@ -32,13 +33,13 @@ class PlaylistDoctor:
                         log.error(f"{playlist_name}: Playlist Spotify ID value cannot be empty.")
                         raise ValueError
 
-                return playlists
+                return playlists_array
         except FileNotFoundError:
-            log.error(f"Could not find {PLAYLISTS_FILE} from the root directory.")
+            log.error(f"Could not find {MY_PLAYLISTS_FILE_NAME} from the root directory.")
             raise FileNotFoundError()
 
     @staticmethod
-    def diagnose_and_cure_patients(playlists):
+    def update_playlists_if_outdated(playlists):
         api_adapter = ApiAdapter()
 
         for playlist in playlists:

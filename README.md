@@ -1,4 +1,4 @@
-# Spotify Playlist Doctor
+# Spotify Playlist Updater
 
 I created this project to fight the Spotify playlist reporting bots.
 Creators use bots to spam reports on growing playlists which triggers the Spotify Takedown Notification and your
@@ -30,7 +30,7 @@ If you have followed these steps without errors then your playlist should have b
 
 1. Get your Public playlist ID: ```https://open.spotify.com/playlist/```__YOUR_PLAYLIST_ID__```?si=83ebb0218ab843cd```
 2. Move all your playlist images to: ```/resources/images```
-3. Open playlists json file: ```playlists.json```
+3. Open playlists json file: ```my_playlists.json```
 4. Add your playlists that you wish to keep healthy. 
 
 ### Example:

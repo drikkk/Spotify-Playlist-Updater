@@ -3,10 +3,10 @@ import base64
 import os
 import requests
 
-from app.Config import Config
-from app.CustomLogger import CustomLogger
+from app.Configuration import Configuration
+from app.LoggingHandler import LoggingHandler
 
-log = CustomLogger(__name__)
+log = LoggingHandler(__name__)
 
 TOKEN = "https://accounts.spotify.com/api/token"
 PLAYLISTS = "https://api.spotify.com/v1/playlists"
@@ -24,9 +24,9 @@ class ApiAdapter:
         headers = {"Content-Type": "application/x-www-form-urlencoded"}
         data = {
             "grant_type": "refresh_token",
-            "refresh_token": Config.refresher_token
+            "refresh_token": Configuration.refresher_token
         }
-        auth = (Config.client, Config.secret)
+        auth = (Configuration.client, Configuration.secret)
 
         try:
             response = requests.post(url, headers=headers, data=data, auth=auth)

@@ -3,12 +3,11 @@ import os
 from configparser import ConfigParser
 from configparser import NoOptionError
 from configparser import ParsingError
-from app.CustomLogger import CustomLogger
+from app.LoggingHandler import LoggingHandler
 
-log = CustomLogger(__name__)
+log = LoggingHandler(__name__)
 
-
-class Config:
+class Configuration:
     CONFIG_NAME = "config.ini"
     config = ConfigParser()
 

@@ -43,7 +43,6 @@ class PlaylistService:
         api = ApiAdapter()
 
         for playlist in playlists:
-
             if api.get_playlist_name(playlist) != playlist.name:
                 log.info(f"{playlist.name}: Updating playlist...")
                 api.update_name(playlist)
